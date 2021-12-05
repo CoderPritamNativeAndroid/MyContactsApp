@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFEB3B"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewUpdateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDDC39"
+            android:fontFamily="sans-serif-black"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textAlignment="center"
+            android:textColor="#000FA5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonNameUpdateContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="#28000000"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="New Contact (Phone,Gmail etc.)"
+            android:inputType="textPersonName"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:textColor="#1A237E"
+            android:textColorHint="#2C2C2C"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="#FFEB3B"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="#0D47A1"
+                android:fontFamily="sans-serif-black"
+                android:padding="12dp"
+                android:text="update"
+                android:textColor="#FFEB3B"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_weight="1"
+                android:background="#B71C1C"
+                android:fontFamily="sans-serif-black"
+                android:padding="12dp"
+                android:text="delete"
+                android:textColor="#FFEB3B"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
